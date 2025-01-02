@@ -31,7 +31,7 @@ export default function CleanLr(props: HeroProps) {
 	};
 
 	return (
-		<div class="flex flex-col-reverse gap-[24px] md:gap-[12px] p-[48px] items-center justify-center md:flex-row md:gap-[48px] h-[100vh] w-[100vw] bg-light text-dark">
+		<div class="flex flex-col-reverse pt-[24px] gap-[24px] md:gap-[12px] p-[48px] items-center justify-center md:flex-row md:gap-[48px] h-[100vh] w-[100vw] bg-light text-dark">
 			<div class="flex flex-col gap-[24px] md:max-w-[640px]">
 				<Kicker text={getRandomKicker()} />
 				<div class="flex flex-col gap-[12px]">

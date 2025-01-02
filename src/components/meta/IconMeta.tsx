@@ -17,7 +17,7 @@ export default function IconMeta() {
 			/>
 			<Meta
 				name="theme-color"
-				content="#ff00ff"
+				content="#F9FAF9"
 			/>
 			<Link
 				rel="icon"
