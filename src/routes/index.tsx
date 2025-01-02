@@ -4,7 +4,10 @@ import { ProductCardProps } from "~/components/common/product-card";
 import Footer from "~/components/common/footer";
 import Header from "~/components/common/header";
 import { createSignal } from "solid-js";
-import { Title, Meta } from "@solidjs/meta";
+import TitleMeta from "~/components/meta/TitleMeta";
+import IconMeta from "~/components/meta/IconMeta";
+import DescriptionMeta from "~/components/meta/DescriptionMeta";
+import UrlMeta from "~/components/meta/UrlMeta";
 
 export default function Home() {
 	const [productsRef, setProductsRef] = createSignal<HTMLDivElement | null>(
@@ -81,11 +84,10 @@ export default function Home() {
 
 	return (
 		<>
-			<Title>Verdetech Inc | Green Design for the Future of Business</Title>
-			<Meta
-				name="description"
-				content="Verdetech Inc is a Canadian design lab, consultancy, and engineering house solving the problems of the future today."
-			/>
+			<TitleMeta title="Verdetech Inc" />
+			<IconMeta />
+			<DescriptionMeta content="Verdetech Inc is a design lab, consultancy, and engineering house solving the problems of the future today." />
+			<UrlMeta url="https://verdetech.io" />
 			<CleanLr
 				scrollTo={(index: number) => {
 					const refs = [productsRef(), teamRef(), contactRef()];
