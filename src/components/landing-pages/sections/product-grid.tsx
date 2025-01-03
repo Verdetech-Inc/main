@@ -15,7 +15,7 @@ export default function ProductGrid(props: ProductGridProps) {
 	let gridClass = "grid grid-cols-1 gap-[24px] md:grid-cols-2 max-w-[960px]";
 	// target 3 cols if over 2 products
 	if (props.products.length > 2) {
-		gridClass = "grid grid-cols-1 gap-[24px] md:grid-cols-3 max-w-[960px]";
+		gridClass = "grid grid-cols-1 gap-[24px] md:grid-cols-3 max-w-[1180px]";
 	}
 
 	return (

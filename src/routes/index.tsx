@@ -41,6 +41,19 @@ export default function Home() {
 			link: "https://getnonna.com",
 		},
 		{
+			title: "Good At The Computer",
+			description: (
+				<p>
+					Good at the Computer is the official{" "}
+					<a href="/newsletter">Verdetech Newsletter</a> keeping people up to
+					date and educated on using new digital technology as it is released
+					and popularized.
+				</p>
+			),
+			image: "/Products/GoodAtComputerCardBg.png",
+			link: "/newsletter",
+		},
+		{
 			title: "GPTBoss",
 			description: (
 				<p>

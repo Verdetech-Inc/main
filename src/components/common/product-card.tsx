@@ -16,7 +16,7 @@ export default function ProductCard({
 	link,
 }: ProductCardProps) {
 	return (
-		<div class="flex flex-col gap-[12px] items-center justify-center bg-light text-dark rounded-[24px] overflow-hidden shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+		<div class="flex flex-col gap-[12px] items-center justify-center bg-light text-dark rounded-[24px] overflow-hidden shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] self-center">
 			<Show when={image !== undefined}>
 				<img
 					src={image}
