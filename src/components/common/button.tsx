@@ -5,16 +5,28 @@ interface ButtonProps {
 	href?: string;
 	children: any;
 	type: "main" | "secondary";
+	isDisabled?: boolean;
 }
 
-export default function Button({ onClick, href, children, type }: ButtonProps) {
+export default function Button({
+	onClick,
+	href,
+	children,
+	type,
+	isDisabled,
+}: ButtonProps) {
 	return (
 		<>
-			<Show when={href !== undefined && type === "main"}>
+			<Show when={href !== undefined && type === "main" && !isDisabled}>
 				<a
 					href={href}
-					class="bg-dark text-light py-2 px-4 rounded hover:shadow-md"
+					class="bg-dark text-light py-2 px-4 rounded hover:shadow-md flex flex-row items-center"
 				>
+					{children}
+				</a>
+			</Show>
+			<Show when={href !== undefined && type === "main" && isDisabled}>
+				<a class="bg-dark text-light py-2 px-4 rounded hover:shadow-md opacity-50">
 					{children}
 				</a>
 			</Show>
